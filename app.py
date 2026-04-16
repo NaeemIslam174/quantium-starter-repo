@@ -60,7 +60,7 @@ app = Dash(__name__)
 
 app.layout = html.Div(style=app_style, children=[
     html.Div(style=card_style, children=[
-        html.H1("Soul Foods — Pink Morsel Sales Visualiser", style=header_style),
+        html.H1("Soul Foods — Pink Morsel Sales Visualiser", id="header", style=header_style),
         html.H3("Filter by region to see how sales changed before and after the price increase",
                 style=subheader_style),
         dcc.RadioItems(
